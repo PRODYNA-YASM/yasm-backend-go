@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `ALL` (value: `"ALL"`)
+* `ANY` (value: `"ANY"`)
 
-* `DIRECT` (value: `"DIRECT"`)
+* `ALL_REQUIRED` (value: `"ALL_REQUIRED"`)
 
-* `INDIRECT` (value: `"INDIRECT"`)
+* `SOME_REQUIRED` (value: `"SOME_REQUIRED"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
