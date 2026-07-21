@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MatchMode** | Pointer to [**MatchMode**](MatchMode.md) |  | [optional] 
+**MatchModes** | Pointer to [**[]MatchMode**](MatchMode.md) |  | [optional] 
 **CountryIds** | Pointer to **[]string** |  | [optional] 
 **NationalityIds** | Pointer to **[]string** |  | [optional] 
 **PersonIds** | Pointer to **[]string** |  | [optional] 
@@ -43,30 +43,30 @@ NewPersonSearchWithDefaults instantiates a new PersonSearch object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetMatchMode
+### GetMatchModes
 
-`func (o *PersonSearch) GetMatchMode() MatchMode`
+`func (o *PersonSearch) GetMatchModes() []MatchMode`
 
-GetMatchMode returns the MatchMode field if non-nil, zero value otherwise.
+GetMatchModes returns the MatchModes field if non-nil, zero value otherwise.
 
-### GetMatchModeOk
+### GetMatchModesOk
 
-`func (o *PersonSearch) GetMatchModeOk() (*MatchMode, bool)`
+`func (o *PersonSearch) GetMatchModesOk() (*[]MatchMode, bool)`
 
-GetMatchModeOk returns a tuple with the MatchMode field if it's non-nil, zero value otherwise
+GetMatchModesOk returns a tuple with the MatchModes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetMatchMode
+### SetMatchModes
 
-`func (o *PersonSearch) SetMatchMode(v MatchMode)`
+`func (o *PersonSearch) SetMatchModes(v []MatchMode)`
 
-SetMatchMode sets MatchMode field to given value.
+SetMatchModes sets MatchModes field to given value.
 
-### HasMatchMode
+### HasMatchModes
 
-`func (o *PersonSearch) HasMatchMode() bool`
+`func (o *PersonSearch) HasMatchModes() bool`
 
-HasMatchMode returns a boolean if a field has been set.
+HasMatchModes returns a boolean if a field has been set.
 
 ### GetCountryIds
 

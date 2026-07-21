@@ -3,7 +3,7 @@ info:
   description: This is an example of using OAuth2 Implicit Flow in a specification
     to describe security to your API.
   title: YASM (Yet Another Skill Management) API
-  version: 1.85.0
+  version: 1.86.0
 servers:
 - url: "{scheme}://{host}:{port}/api/graph/v1"
   variables:
@@ -6325,8 +6325,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/Search'
       - properties:
-          matchMode:
-            $ref: '#/components/schemas/MatchMode'
+          matchModes:
+            items:
+              $ref: '#/components/schemas/MatchMode'
+            type: array
           countryIds:
             $ref: '#/components/schemas/UUIDS'
           nationalityIds:
@@ -6663,8 +6665,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/Search'
       - properties:
-          matchMode:
-            $ref: '#/components/schemas/MatchMode'
+          matchModes:
+            items:
+              $ref: '#/components/schemas/MatchMode'
+            type: array
           projectIds:
             $ref: '#/components/schemas/UUIDS'
           minStartDate:
@@ -7420,11 +7424,11 @@ components:
       title: CertificationView
       type: object
     MatchMode:
-      description: Defines the minimum level of keyword matching required.
+      description: Defines the level of keyword matching required.
       enum:
-      - ANY
-      - ALL_REQUIRED
-      - SOME_REQUIRED
+      - ALL_MATCH
+      - SOME_MATCH
+      - INDIRECT_MATCH
       title: MatchMode
       type: string
     AvailabilityFilter:

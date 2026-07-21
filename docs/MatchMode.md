@@ -3,11 +3,11 @@
 ## Enum
 
 
-* `ANY` (value: `"ANY"`)
+* `ALL_MATCH` (value: `"ALL_MATCH"`)
 
-* `ALL_REQUIRED` (value: `"ALL_REQUIRED"`)
+* `SOME_MATCH` (value: `"SOME_MATCH"`)
 
-* `SOME_REQUIRED` (value: `"SOME_REQUIRED"`)
+* `INDIRECT_MATCH` (value: `"INDIRECT_MATCH"`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
