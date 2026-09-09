@@ -3,7 +3,7 @@ info:
   description: This is an example of using OAuth2 Implicit Flow in a specification
     to describe security to your API.
   title: YASM (Yet Another Skill Management) API
-  version: 1.86.0
+  version: 1.87.0
 servers:
 - url: "{scheme}://{host}:{port}/api/graph/v1"
   variables:
@@ -6587,6 +6587,21 @@ components:
             $ref: '#/components/schemas/ProjectType'
           confidentiality:
             $ref: '#/components/schemas/Confidentiality'
+          website:
+            description: Project website URL
+            example: https://yasm.prodyna.com
+            nullable: true
+            type: string
+          github:
+            description: GitHub repository or profile URL/handle
+            example: https://github.com/prodyna-yasm/
+            nullable: true
+            type: string
+          socialMedia:
+            description: "Social media profile URL or handle, for example X/Twitter"
+            example: '@yasm'
+            nullable: true
+            type: string
         type: object
       title: Project
     ProjectDetails:

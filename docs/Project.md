@@ -12,6 +12,9 @@ Name | Type | Description | Notes
 **ErpIds** | Pointer to **[]string** | IDs in the ERP system | [optional] 
 **ProjectType** | Pointer to [**ProjectType**](ProjectType.md) |  | [optional] 
 **Confidentiality** | Pointer to [**Confidentiality**](Confidentiality.md) |  | [optional] 
+**Website** | Pointer to **NullableString** | Project website URL | [optional] 
+**Github** | Pointer to **NullableString** | GitHub repository or profile URL/handle | [optional] 
+**SocialMedia** | Pointer to **NullableString** | Social media profile URL or handle, for example X/Twitter | [optional] 
 
 ## Methods
 
@@ -232,6 +235,111 @@ SetConfidentiality sets Confidentiality field to given value.
 
 HasConfidentiality returns a boolean if a field has been set.
 
+### GetWebsite
+
+`func (o *Project) GetWebsite() string`
+
+GetWebsite returns the Website field if non-nil, zero value otherwise.
+
+### GetWebsiteOk
+
+`func (o *Project) GetWebsiteOk() (*string, bool)`
+
+GetWebsiteOk returns a tuple with the Website field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetWebsite
+
+`func (o *Project) SetWebsite(v string)`
+
+SetWebsite sets Website field to given value.
+
+### HasWebsite
+
+`func (o *Project) HasWebsite() bool`
+
+HasWebsite returns a boolean if a field has been set.
+
+### SetWebsiteNil
+
+`func (o *Project) SetWebsiteNil(b bool)`
+
+ SetWebsiteNil sets the value for Website to be an explicit nil
+
+### UnsetWebsite
+`func (o *Project) UnsetWebsite()`
+
+UnsetWebsite ensures that no value is present for Website, not even an explicit nil
+### GetGithub
+
+`func (o *Project) GetGithub() string`
+
+GetGithub returns the Github field if non-nil, zero value otherwise.
+
+### GetGithubOk
+
+`func (o *Project) GetGithubOk() (*string, bool)`
+
+GetGithubOk returns a tuple with the Github field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGithub
+
+`func (o *Project) SetGithub(v string)`
+
+SetGithub sets Github field to given value.
+
+### HasGithub
+
+`func (o *Project) HasGithub() bool`
+
+HasGithub returns a boolean if a field has been set.
+
+### SetGithubNil
+
+`func (o *Project) SetGithubNil(b bool)`
+
+ SetGithubNil sets the value for Github to be an explicit nil
+
+### UnsetGithub
+`func (o *Project) UnsetGithub()`
+
+UnsetGithub ensures that no value is present for Github, not even an explicit nil
+### GetSocialMedia
+
+`func (o *Project) GetSocialMedia() string`
+
+GetSocialMedia returns the SocialMedia field if non-nil, zero value otherwise.
+
+### GetSocialMediaOk
+
+`func (o *Project) GetSocialMediaOk() (*string, bool)`
+
+GetSocialMediaOk returns a tuple with the SocialMedia field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSocialMedia
+
+`func (o *Project) SetSocialMedia(v string)`
+
+SetSocialMedia sets SocialMedia field to given value.
+
+### HasSocialMedia
+
+`func (o *Project) HasSocialMedia() bool`
+
+HasSocialMedia returns a boolean if a field has been set.
+
+### SetSocialMediaNil
+
+`func (o *Project) SetSocialMediaNil(b bool)`
+
+ SetSocialMediaNil sets the value for SocialMedia to be an explicit nil
+
+### UnsetSocialMedia
+`func (o *Project) UnsetSocialMedia()`
+
+UnsetSocialMedia ensures that no value is present for SocialMedia, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
