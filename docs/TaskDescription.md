@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TaskDescription** | Pointer to **string** |  | [optional] 
-**TaskType** | Pointer to [**AvailabilityType**](AvailabilityType.md) |  | [optional] 
+**TaskDescription** | **string** |  | 
+**TaskType** | [**AvailabilityType**](AvailabilityType.md) |  | 
 
 ## Methods
 
 ### NewTaskDescription
 
-`func NewTaskDescription() *TaskDescription`
+`func NewTaskDescription(taskDescription string, taskType AvailabilityType, ) *TaskDescription`
 
 NewTaskDescription instantiates a new TaskDescription object
 This constructor will assign default values to properties that have it defined,
@@ -45,11 +45,6 @@ and a boolean to check if the value has been set.
 
 SetTaskDescription sets TaskDescription field to given value.
 
-### HasTaskDescription
-
-`func (o *TaskDescription) HasTaskDescription() bool`
-
-HasTaskDescription returns a boolean if a field has been set.
 
 ### GetTaskType
 
@@ -70,11 +65,6 @@ and a boolean to check if the value has been set.
 
 SetTaskType sets TaskType field to given value.
 
-### HasTaskType
-
-`func (o *TaskDescription) HasTaskType() bool`
-
-HasTaskType returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

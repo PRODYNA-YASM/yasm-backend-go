@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/prodyna-yasm/yasm-api-go"
+	openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func Test_client_OrganizationAPIService(t *testing.T) {

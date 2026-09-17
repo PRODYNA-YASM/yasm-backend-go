@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 **ErpIds** | Pointer to **[]string** | IDs in the ERP system | [optional] 
 **ProjectType** | Pointer to [**ProjectType**](ProjectType.md) |  | [optional] 
 **Confidentiality** | Pointer to [**Confidentiality**](Confidentiality.md) |  | [optional] 
-**Website** | Pointer to **NullableString** | Project website URL | [optional] 
-**Github** | Pointer to **NullableString** | GitHub repository or profile URL/handle | [optional] 
-**SocialMedia** | Pointer to **NullableString** | Social media profile URL or handle, for example X/Twitter | [optional] 
+**Website** | Pointer to **string** | Project website URL | [optional] 
+**Github** | Pointer to **string** | Project GitHub URL | [optional] 
+**SocialMedia** | Pointer to **string** | Project social media URL | [optional] 
 
 ## Methods
 
@@ -260,16 +260,6 @@ SetWebsite sets Website field to given value.
 
 HasWebsite returns a boolean if a field has been set.
 
-### SetWebsiteNil
-
-`func (o *Project) SetWebsiteNil(b bool)`
-
- SetWebsiteNil sets the value for Website to be an explicit nil
-
-### UnsetWebsite
-`func (o *Project) UnsetWebsite()`
-
-UnsetWebsite ensures that no value is present for Website, not even an explicit nil
 ### GetGithub
 
 `func (o *Project) GetGithub() string`
@@ -295,16 +285,6 @@ SetGithub sets Github field to given value.
 
 HasGithub returns a boolean if a field has been set.
 
-### SetGithubNil
-
-`func (o *Project) SetGithubNil(b bool)`
-
- SetGithubNil sets the value for Github to be an explicit nil
-
-### UnsetGithub
-`func (o *Project) UnsetGithub()`
-
-UnsetGithub ensures that no value is present for Github, not even an explicit nil
 ### GetSocialMedia
 
 `func (o *Project) GetSocialMedia() string`
@@ -330,16 +310,6 @@ SetSocialMedia sets SocialMedia field to given value.
 
 HasSocialMedia returns a boolean if a field has been set.
 
-### SetSocialMediaNil
-
-`func (o *Project) SetSocialMediaNil(b bool)`
-
- SetSocialMediaNil sets the value for SocialMedia to be an explicit nil
-
-### UnsetSocialMedia
-`func (o *Project) UnsetSocialMedia()`
-
-UnsetSocialMedia ensures that no value is present for SocialMedia, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

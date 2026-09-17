@@ -1,4 +1,4 @@
-module github.com/prodyna-yasm/yasm-api-go
+module github.com/prodyna-yasm/yasm-backend-go
 
 go 1.18
 

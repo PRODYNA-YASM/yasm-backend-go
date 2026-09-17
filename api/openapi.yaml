@@ -3,7 +3,7 @@ info:
   description: This is an example of using OAuth2 Implicit Flow in a specification
     to describe security to your API.
   title: YASM (Yet Another Skill Management) API
-  version: 1.87.0
+  version: 1.88.0
 servers:
 - url: "{scheme}://{host}:{port}/api/graph/v1"
   variables:
@@ -6589,18 +6589,12 @@ components:
             $ref: '#/components/schemas/Confidentiality'
           website:
             description: Project website URL
-            example: https://yasm.prodyna.com
-            nullable: true
             type: string
           github:
-            description: GitHub repository or profile URL/handle
-            example: https://github.com/prodyna-yasm/
-            nullable: true
+            description: Project GitHub URL
             type: string
           socialMedia:
-            description: "Social media profile URL or handle, for example X/Twitter"
-            example: '@yasm'
-            nullable: true
+            description: Project social media URL
             type: string
         type: object
       title: Project
@@ -6808,7 +6802,7 @@ components:
           audit:
             $ref: '#/components/schemas/Audit'
         type: object
-      title: Image
+      title: ImageDetails
     ProjectParticipationCreate:
       allOf:
       - $ref: '#/components/schemas/ProjectParticipationUpdate'
@@ -7024,7 +7018,7 @@ components:
       allOf:
       - $ref: '#/components/schemas/NamedDomainModel'
       - $ref: '#/components/schemas/Descriptable'
-      title: Office
+      title: ShoppingCartGroup
     ShoppingCartGroupDetail:
       example:
         persons:
@@ -7416,6 +7410,9 @@ components:
           type: string
         taskType:
           $ref: '#/components/schemas/AvailabilityType'
+      required:
+      - taskDescription
+      - taskType
       title: TaskDescription
       type: object
     SkillStatisticProject:
@@ -7800,6 +7797,8 @@ components:
           format: binary
           type: string
       required:
+      - id
+      - name
       - svgFile
       type: object
   securitySchemes:

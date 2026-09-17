@@ -35,7 +35,7 @@ import (
     "fmt"
     "os"
     "time"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -110,7 +110,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -183,7 +183,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -249,7 +249,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -317,7 +317,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -388,7 +388,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -459,7 +459,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -527,7 +527,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -598,7 +598,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -662,7 +662,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -733,7 +733,7 @@ import (
     "fmt"
     "os"
     "time"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -808,7 +808,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {

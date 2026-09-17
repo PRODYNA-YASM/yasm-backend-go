@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## CreateLayout
 
-> LayoutDetails CreateLayout(ctx).SvgFile(svgFile).Id(id).Name(name).Execute()
+> LayoutDetails CreateLayout(ctx).Id(id).Name(name).SvgFile(svgFile).Execute()
 
 Create a Layout
 
@@ -26,17 +26,17 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
+    id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | 
+    name := "name_example" // string | Layout JSON object
     svgFile := os.NewFile(1234, "some_file") // *os.File | SVG layout file
-    id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
-    name := "name_example" // string | Layout JSON object (optional)
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
-    resp, r, err := apiClient.LayoutAPI.CreateLayout(context.Background()).SvgFile(svgFile).Id(id).Name(name).Execute()
+    resp, r, err := apiClient.LayoutAPI.CreateLayout(context.Background()).Id(id).Name(name).SvgFile(svgFile).Execute()
     if err != nil {
         fmt.Fprintf(os.Stderr, "Error when calling `LayoutAPI.CreateLayout``: %v\n", err)
         fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -57,9 +57,9 @@ Other parameters are passed through a pointer to a apiCreateLayoutRequest struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **svgFile** | ***os.File** | SVG layout file | 
  **id** | **string** |  | 
  **name** | **string** | Layout JSON object | 
+ **svgFile** | ***os.File** | SVG layout file | 
 
 ### Return type
 
@@ -94,7 +94,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -162,7 +162,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
@@ -230,7 +230,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/prodyna-yasm/yasm-api-go"
+    openapiclient "github.com/prodyna-yasm/yasm-backend-go"
 )
 
 func main() {
